@@ -13,7 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "job triggered by event"
+          echo "job triggered by event: ${{ github.event_name }}"
+          echo " name of branch is ${{ github.ref }} and your repository is ."
           
       - uses: actions/checkout@v3.3.0
       - name: List files in the repository
