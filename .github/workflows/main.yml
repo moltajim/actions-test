@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "job triggered by event: ${{github.event_name }}"
-        echo "name of branch is ${{ github.ref }} ."
+        echo "job triggered by event: ${{ github.event_name }}"
+        echo "the name of branch is ${{ github.ref }} and your repository is ."
 
       - uses: actions/checkout@v3.3.0
 
